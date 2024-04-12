@@ -1,0 +1,232 @@
+/* -------------------------------------------------------------------------- */
+/*                             PAGINA DE CONTACTOS                            */
+/* -------------------------------------------------------------------------- */
+/* main */
+.fondo-agenda{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(../assets/Img/fondos/fondo-agenda.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+
+    .contenedor-agenda {
+    padding-bottom: 30px;
+    padding-top: 200px;
+    }
+
+    .titulo-agenda {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: -90px;
+    font-size: 45px;
+    padding-top: 20px;
+    }
+
+    .controls {
+    width: 48%; 
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #fffffff0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fffffff0; 
+    text-align: left;
+    margin-bottom: 20px;
+    }
+
+    .registro .controls:invalid {
+    background:#b44242;
+    border: none;
+    }
+
+    .imagen-linea-titulo {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    }
+
+    .imagen-linea-titulo img {
+    width: 400px;
+    }
+
+    .registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline; 
+    padding: 35px 60px;
+    margin: auto;
+    }
+
+    .controls, .area, .registro .bottons {
+    width: 35%; 
+    max-width: none; 
+    margin: 10px 0; 
+    margin-bottom: 20px;
+    max-width: 50%;
+    }
+
+    .registro .bottons {
+    width: auto; 
+    max-width: 200px; 
+    padding: 12px;
+    color: #fffffff0;
+    background-color: #c00000;
+    margin: 16px 0px;
+    font-size: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+
+    .registro h3.modificado {
+    font-size: 50px;
+    margin-bottom: 37px;
+    text-align: center;
+    color: #fffffff0;
+    }
+
+    .registro h4{
+    color: #fffffff0;
+    }
+
+    .registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    }
+
+    .asterisco{
+    color: #c00000;
+    }
+
+    .contenedor-mensaje {
+    text-align: left;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px 0;
+    margin-left: 810px;
+    margin-top: -295px;
+    }
+
+    .titulo-de-mensaje {
+    padding-bottom: 10px;
+    }
+
+    .mensaje {
+    resize: none;
+    width: 570px;
+    height: 210px;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #fffffff0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fffffff0; 
+    margin-bottom: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+    max-width: 100%;
+    }
+
+    .contenedor-boton-agenda{
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 38px;
+    margin-left: 59px;
+    margin-bottom: 85px
+    }
+
+    .boton-agenda {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #c00000;
+    color: #fffffff0;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .boton-agenda:hover {
+    background-color: #a00000;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* footer */
+.container-footer {
+    margin: 0 auto;
+    height: 190px;
+}
+
+.footer {
+    background-color: #212121;
+    padding: 10px 0;
+}
+
+.logo-footer img{
+    width: 130px;
+    height: 130px;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 60px;
+    border-right: 2px solid #ffffff;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #c00000;
+    display: inline-block;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links p {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.footer-links nav img {
+    padding-bottom: 10px;
+}
+
+.footer-rigths {
+    background-color: #aeaeaeeb;
+    font-size: 11px;
+    color: #000000af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-rigths img {
+    height: 10px;
+    width: 10px;
+    margin-right: 3px;
+}

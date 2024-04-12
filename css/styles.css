@@ -1,1123 +1,896 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
-body{
-    color: #fdfdfdfd;
-    font-family: "Roboto", sans-serif;
-}
-/* -------------------------------------------------------------------------- */
-/*                              PAGINA DE INICIO                              */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                             comienzo del header                            */
-/* -------------------------------------------------------------------------- */
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    height: 90px;
-    background-color: rgba(0, 0, 0, 0.85);
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+body {
+  color: rgba(253, 253, 253, 0.9921568627);
+  font-family: "Roboto", sans-serif;
 }
 
-.logo-header img{
-    height: 165px;
-    width: 135px;
-    margin-top: 70px;
-    margin-left: -15px;
-    align-items: center;
-    border-radius: 5px;
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+header nav a {
+  font-weight: 500;
+  padding-right: 10px;
+  margin-left: 15px;
+}
+header .logo-header img {
+  height: 165px;
+  width: 135px;
+  margin-top: 70px;
+  margin-left: -15px;
+  align-items: center;
+  border-radius: 5px;
+}
+header a {
+  text-decoration: none;
+  color: rgba(253, 253, 253, 0.9921568627);
+}
+header nav a:hover {
+  color: #c00000;
+}
+header .productos {
+  font-weight: 500;
+  color: rgba(253, 253, 253, 0.9921568627);
+  padding: 34px 15px;
+  background-color: #c00000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header .productos:hover {
+  color: rgba(0, 0, 0, 0.9254901961);
 }
 
-nav a{
-    font-weight: 500;
-    padding-right: 10px;
-    margin-left: 15px;
+/* main */
+.fondo-inicio {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Img/fondos/Fondo\ de\ Pagina\ Principal.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+.fondo-inicio main {
+  text-align: left;
+  padding-left: 30px;
+  margin-top: 130px;
+}
+.fondo-inicio .informacion-inicio {
+  font-size: 25px;
+  padding-top: 60px;
+}
+.fondo-inicio .informacion-inicio h1 {
+  font-size: 50px;
+  padding-bottom: 8px;
+}
+.fondo-inicio .informacion-inicio h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  color: rgba(253, 253, 253, 0.9921568627);
+  padding: 0px;
+  padding-bottom: 20px;
+}
+.fondo-inicio .informacion-inicio h3 {
+  font-size: 35px;
+}
+.fondo-inicio .contenedor-boton {
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  margin-right: 38px;
+}
+.fondo-inicio .boton {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: #c00000;
+  color: rgba(253, 253, 253, 0.9921568627);
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fondo-inicio .boton:hover {
+  background-color: #a00000;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-a{
-    text-decoration: none;
-    color: #fdfdfdfd;
-}
-
-nav a:hover{
-    color: #c00000;
-}
-
-.productos {
-    font-weight: 500;
-    color: #fdfdfdfd;
-    padding: 34px 15px;
-    background-color: #c00000;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.productos:hover {
-    color: #000000ec;
-}
-/* -------------------------------------------------------------------------- */
-/*                             finaliza el header                             */
-/* -------------------------------------------------------------------------- */
-
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                              comienza el main                              */
-/* -------------------------------------------------------------------------- */
-.fondo-inicio{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(../assets/Img/fondos/Fondo\ de\ Pagina\ Principal.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
-}
-
-
-main {
-    text-align: left;
-    padding-left: 30px;
-    margin-top: 130px;
-}
-
-.informacion-inicio {
-    font-size: 25px;
-    padding-top: 60px;
-}
-
-.informacion-inicio h1{
-    font-size: 50px;
-    padding-bottom: 8px;
-}
-.informacion-inicio h2 {
-    font-family: "Dancing Script", cursive;
-    font-size: 50px;
-    color: #fdfdfdfd;
-    padding: 0px;
-    padding-bottom: 20px;
-}
-
-.informacion-inicio h3 {
-    font-size: 35px;
-}
-
-.contenedor-boton {
-    text-align: center;
-    margin-top: 60px;
-    padding-bottom: 30px;
-    margin-right: 38px;
-}
-
-.boton {
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #c00000;
-    color: #fdfdfdfd;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.boton:hover {
-    background-color: #a00000;
-    transform: scale(1.1);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-/* -------------------------------------------------------------------------- */
-/*                              finaliza el main                              */
-/* -------------------------------------------------------------------------- */
-
-
-/* -------------------------------------------------------------------------- */
-/*                             comienza el footer                             */
-/* -------------------------------------------------------------------------- */
+/* footer */
 footer-1 {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-
-.redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
+footer-1 .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
 }
-
-.redes a {
-    margin: 0 30px;
+footer-1 .redes a {
+  margin: 0 30px;
 }
-
-.redes img {
-    width: 50px;
-    height: 50px;
+footer-1 .redes img {
+  width: 50px;
+  height: 50px;
 }
-
-.redes img:hover {
-    transform: scale(1.1);
+footer-1 .redes img:hover {
+  transform: scale(1.1);
 }
-/* -------------------------------------------------------------------------- */
-/*                             finaliza el footer                             */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                        MEDIA QR DE PAGINA DE INICIO (768px)                */
-/* -------------------------------------------------------------------------- */
-@media screen and (max-width: 768px) {
-
-    header{
-        height: 75px;
-        padding: 5px;
-    }
-    
-    .logo-header img{
-        height: 145px;
-        width: 115px;
-        margin-left: 13px;
-    }
-    
-    nav a{
-        font-weight: 450;
-        font-size: 15px;
-        margin-left: 8px;
-    }
-
-    .productos {
-        font-weight: 450;
-        padding: 29px 8px;
-    }
-
-    .fondo-inicio{
-        background-size: 800px 540px;
-    }
-
-    main {
-        padding-left: 35px; 
-    }
-    
-    .informacion-inicio {
-        padding-top: 60px;
-    }
-    
-    .informacion-inicio h1{
-        font-size: 34px;
-    }
-    .informacion-inicio h2 {
-        font-size: 34px;
-    }
-    
-    .informacion-inicio h3 {
-        font-size: 25px;
-    }
-    
-    .contenedor-boton {
-        margin-top: 55px;
-    }
-    
-    .boton {
-        padding: 12px 36px;
-        font-size: 13px;
-    }
-
-    .redes {
-        height: 30px;
-    }
-    
-    .redes a {
-        margin: 0 26px;
-    }
-    
-    .redes img {
-        width: 41px; 
-        height: 41px;
-    }
-}
-/* -------------------------------------------------------------------------- */
-/*                        MEDIA QR DE PAGINA DE INICIO (768px)                */
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-/*                    MEDIA QR DE PAGINA DE INICIO (320px)                    */
-/* -------------------------------------------------------------------------- */
-@media screen and (max-width: 320px){
-    
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 25px;
-        height: auto;
-    }
-
-    .logo-header img {
-        height: auto;
-        width: 70px;
-        margin-top: -10px;
-        margin-left: 0;
-    }
-
-    nav {
-        margin-top: 5px;
-        text-align: center;
-    }
-
-    nav a {
-        margin: 5px;
-        padding: 5px;
-        font-size: 12px;
-        line-height: 30px;
-    }
-
-    .productos {
-        padding: 8px;
-    }
-
-    .fondo-inicio{
-        background-size: 400px 520px;
-    }
-    
-    main {
-        padding-left: 20px;
-    }
-    
-    .informacion-inicio {
-        font-size: 25px;
-        padding-top: 165px;
-    }
-    
-    .informacion-inicio h1{
-        font-size: 17px;
-    }
-    .informacion-inicio h2 {
-        font-size: 19px;
-        padding-bottom: 15px;
-    }
-    
-    .informacion-inicio h3 {
-        font-size: 14px;
-    }
-    
-    .contenedor-boton {
-        padding-bottom: 40px;
-        margin-top: 60px;
-        margin-left: 15px;
-    }
-    
-    .boton {
-        padding: 10px 20px;
-        font-size: 11px;
-    }
-
-    .redes {
-        height: 30px;
-    }
-    
-    .redes a {
-        margin: 0 20px;
-    }
-    
-    .redes img {
-        width: 35px; 
-        height: 35px;
-    }
-
-}
-/* -------------------------------------------------------------------------- */
-/*                    MEDIA QR DE PAGINA DE INICIO (320px)                    */
-/* -------------------------------------------------------------------------- */
-
-
-/* -------------------------------------------------------------------------- */
-/*                              PAGINA DE INICIO                              */
-/* -------------------------------------------------------------------------- */
-
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                             PAGINA DE CONTACTOS                            */
 /* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                             comienza el main                             */
-/* -------------------------------------------------------------------------- */
-.fondo-agenda{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    )
-    ,url(../assets/Img/fondos/fondo-agenda.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 110vh;
+/* main */
+.fondo-agenda {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Img/fondos/fondo-agenda.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
 }
-.contenedor-agenda {
-    padding-bottom: 30px;
+.fondo-agenda .contenedor-agenda {
+  padding-bottom: 30px;
+  padding-top: 200px;
 }
-
-.controls {
-    width: 48%; 
-    background: rgba(0, 0, 0, 0);
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #fffffff0;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #fffffff0; 
-    text-align: left;
-    margin-bottom: 20px;
-    
+.fondo-agenda .titulo-agenda {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -90px;
+  font-size: 45px;
+  padding-top: 20px;
 }
-
-.registro .controls:invalid {
-    background:#b44242;
-    border: none;
+.fondo-agenda .controls {
+  width: 48%;
+  background: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.9411764706);
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9411764706);
+  text-align: left;
+  margin-bottom: 20px;
 }
-
-.titulo-agenda {
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: -90px;
-    font-size: 45px;
-    padding-top: 20px;
+.fondo-agenda .registro .controls:invalid {
+  background: #b44242;
+  border: none;
 }
-
-.imagen-linea-titulo {
-    display: flex;
-    justify-content: center;
-    padding: 8px;
+.fondo-agenda .imagen-linea-titulo {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
 }
-
-.imagen-linea-titulo img {
-    width: 400px;
+.fondo-agenda .imagen-linea-titulo img {
+  width: 400px;
 }
-.registro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline; 
-    padding: 35px 60px;
-    margin: auto;
+.fondo-agenda .registro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 35px 60px;
+  margin: auto;
 }
-
-.controls, .area, .registro .bottons {
-    width: 35%; 
-    max-width: none; 
-    margin: 10px 0; 
-    margin-bottom: 20px;
-    max-width: 50%;
+.fondo-agenda .controls, .fondo-agenda .area, .fondo-agenda .registro .bottons {
+  width: 35%;
+  max-width: none;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  max-width: 50%;
 }
-
-.registro .bottons {
-    width: auto; 
-    max-width: 200px; 
-    padding: 12px;
-    color: #fffffff0;
-    background-color: #c00000;
-    margin: 16px 0px;
-    font-size: 16px;
-    border-radius: 10px;
-    overflow: hidden;
+.fondo-agenda .registro .bottons {
+  width: auto;
+  max-width: 200px;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.9411764706);
+  background-color: #c00000;
+  margin: 16px 0px;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-
-.registro h3.modificado {
-    font-size: 50px;
-    margin-bottom: 37px;
-    text-align: center;
-    color: #fffffff0;
+.fondo-agenda .registro h3.modificado {
+  font-size: 50px;
+  margin-bottom: 37px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9411764706);
 }
-
-
-.registro h4{
-    color: #fffffff0;
+.fondo-agenda .registro h4 {
+  color: rgba(255, 255, 255, 0.9411764706);
 }
-
-.registro p{
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
+.fondo-agenda .registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
 }
-
-.asterisco{
-    color: #c00000;
+.fondo-agenda .asterisco {
+  color: #c00000;
 }
-
-.contenedor-mensaje {
-    text-align: left;
-    width: 80%;
-    max-width: 400px;
-    margin: 20px 0;
-    margin-left: 770px;
-    margin-top: -295px;
+.fondo-agenda .contenedor-mensaje {
+  text-align: left;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px 0;
+  margin-left: 810px;
+  margin-top: -295px;
 }
-
-.mensaje {
-    resize: none;
-    width: 570px;
-    height: 210px;
-    background: rgba(0, 0, 0, 0);
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #fffffff0;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #fffffff0; 
-    margin-bottom: 16px;
-    text-align: left;
-    margin-bottom: 20px;
-    max-width: 100%;
+.fondo-agenda .titulo-de-mensaje {
+  padding-bottom: 10px;
 }
-
-.titulo-de-mensaje {
-    padding-bottom: 10px;
+.fondo-agenda .mensaje {
+  resize: none;
+  width: 570px;
+  height: 210px;
+  background: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.9411764706);
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9411764706);
+  margin-bottom: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: 100%;
 }
-
-.contenedor-boton-agenda{
-        text-align: left;
-        margin-top: 10px;
-        margin-right: 38px;
-        margin-left: 59px;
-        margin-bottom: 85px
+.fondo-agenda .contenedor-boton-agenda {
+  text-align: left;
+  margin-top: 10px;
+  margin-right: 38px;
+  margin-left: 59px;
+  margin-bottom: 85px;
+}
+.fondo-agenda .boton-agenda {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #c00000;
+  color: rgba(255, 255, 255, 0.9411764706);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fondo-agenda .boton-agenda:hover {
+  background-color: #a00000;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.boton-agenda {
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #c00000;
-    color: #fffffff0;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.boton-agenda:hover {
-    background-color: #a00000;
-    transform: scale(1.1);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-/* -------------------------------------------------------------------------- */
-/*                              finaliza el main                              */
-/* -------------------------------------------------------------------------- */
-
-
-/* -------------------------------------------------------------------------- */
-/*                             comienza el footer                             */
-/* -------------------------------------------------------------------------- */
+/* footer */
 .container-footer {
-    margin: 0 auto;
-    height: 190px;
-}
-
-.logo-footer img{
-    width: 130px;
-    height: 130px;
-    padding-left: 15px;
-    padding-top: 20px;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 60px;
-    border-right: 2px solid #ffffff;
+  margin: 0 auto;
+  height: 190px;
 }
 
 .footer {
-    background-color: #212121;
-    padding: 10px 0;
+  background-color: #212121;
+  padding: 10px 0;
 }
 
-.footer-row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.logo-footer img {
+  width: 130px;
+  height: 130px;
+  padding-left: 15px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 60px;
+  border-right: 2px solid #ffffff;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-links {
-    width: 25%;
-    padding: 0 15px;
+  width: 25%;
+  padding: 0 15px;
 }
 
-.footer-links h4{
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid #c00000;
-    display: inline-block;
-    padding-bottom: 10px;
-    display: inline-block;
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #c00000;
+  display: inline-block;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 .footer-links p {
-    margin-bottom: 10px;
-    font-size: 13px;
+  margin-bottom: 10px;
+  font-size: 13px;
 }
 
 .footer-links nav img {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .footer-rigths {
-    background-color: #aeaeaeeb;
-    font-size: 11px;
-    color: #000000af;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(174, 174, 174, 0.9215686275);
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6862745098);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-rigths img {
-    height: 10px;
-    width: 10px;
-    margin-right: 3px;
+  height: 10px;
+  width: 10px;
+  margin-right: 3px;
 }
-/* -------------------------------------------------------------------------- */
-/*                             finaliza el footer                             */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                             PAGINA DE CONTACTOS                            */
-/* -------------------------------------------------------------------------- */
 
-
-/* -------------------------------------------------------------------------- */
-/*                        MEDIA QR DE PAGINA DE CONTACTOS (768px)             */
-/* -------------------------------------------------------------------------- */
-@media screen and (max-width: 768px){
-    
-    .fondo-agenda{
-        background-size: 800px 640px;
-    }
-    
-    .controls {
-        padding: 5px;
-        font-size: 15px; 
-    }
-    
-    .titulo-agenda {
-        font-size: 40px;
-    }
-    
-    .imagen-linea-titulo {
-        padding: 8px;
-    }
-    
-    .imagen-linea-titulo img {
-        width: 300px;
-    }
-    
-    .registro {
-        padding: 35px 10px;
-    }
-    
-    .controls, .area, .registro .bottons {
-        width: 36%;  
-        margin-bottom: 20px;
-    }
-    
-    .registro .bottons { 
-        padding: 12px;
-    }
-    
-    .registro h3.modificado {
-        font-size: 50px;
-        margin-bottom: 37px;
-    }
-    
-    .registro p{
-        height: 10px;
-        font-size: 18px;
-    }
-    
-    .contenedor-mensaje {
-        max-width: 250px;
-        margin-left: 440px;
-        margin-top: -270px;
-    }
-    
-    .mensaje {
-        height: 185px;
-    }
-    
-    .titulo-de-mensaje {
-        padding-bottom: 10px;
-    }
-    
-    .contenedor-boton-agenda{
-            margin-right: 38px;
-            margin-left: 11px;
-    }
-    
-    .boton-agenda {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    
-    .logo-footer img{
-        width: 120px;
-        height: 120px;
-        padding-left: 15px;
-        margin-top: 10px;
-    }
-
-    .footer-links h4{
-        font-size: 15px;
-        margin-bottom: 13px;
-    }
-    
-    .footer-links p {
-        margin-bottom: 10px;
-        font-size: 10px;
-    }
-}
-/* -------------------------------------------------------------------------- */
-/*                        MEDIA QR DE PAGINA DE CONTACTOS (768px)             */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                        MEDIA QR DE PAGINA DE CONTACTOS (320px)             */
-/* -------------------------------------------------------------------------- */
-@media screen and (max-width: 320px) {
-    .fondo-agenda{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
-        )
-        ,url(../assets/Img/fondos/fondo-agenda.webp);
-        background-size: 520px 1024px;
-        background-repeat: no-repeat;
-        height: 110vh;
-    }
-
-    main {
-        margin-top: 40px;
-    }
-    
-    .contenedor-agenda {
-        padding-bottom: 30px;
-        overflow: hidden;
-        margin-right: -87px;
-    }
-    
-    .titulo-agenda {
-        margin-top: -21px;
-        font-size: 35px;
-
-    }
-    
-    .imagen-linea-titulo {
-        padding: 8px;
-        margin-top: -20px;
-    }
-    
-    .imagen-linea-titulo img {
-        width: 250px;
-    }
-    
-    .controls {
-        width: 48%; 
-        padding: 5px;
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-    
-    .registro {
-        padding: 38px 0px;
-        margin-top: -18px;
-        margin-right: -83px;
-    }
-    
-    .controls, .area, .registro .bottons {
-        width: 900px;
-        margin: 10px 0; 
-        margin-bottom: 20px;
-        max-width: 50%;
-        margin-left: 75px;
-    }
-    
-    .registro .bottons { 
-        max-width: 200px; 
-        padding: 12px;
-        margin: 16px 0px;
-        font-size: 16px;
-        overflow: hidden;
-    }
-    
-    .registro h3.modificado {
-        font-size: 50px;
-        margin-bottom: 37px;
-    }
-    
-    
-    .registro h4{
-        font-size: 13px;
-    }
-    
-    .registro p{
-        height: 40px;
-        font-size: 18px;
-    }
-    
-    .contenedor-mensaje {
-        margin-left: 82px;
-        margin-top: -46px;
-    }
-    
-    .mensaje {
-        width: 220px;
-        height: 100px;
-        padding: 10px;
-        font-size: 14px;
-        margin-bottom: 20px;
-        max-width: 100%;
-    }
-    
-    .titulo-de-mensaje {
-        padding-bottom: 10px;
-        font-size: 13px;
-    }
-    
-    .contenedor-boton-agenda{
-            margin-top: -20px;
-            margin-right: 38px;
-            margin-left: 147px;
-            margin-bottom: 11px
-    }
-    
-    .boton-agenda {
-        padding: 9px 21px;
-        font-size: 13px;
-    }
-    
-    .footer {
-        height: 100%;
-        margin-right: -90px;
-        overflow: hidden;
-    }
-    
-    .container-footer {
-        margin: 0 auto;
-        padding: 10px;
-    }
-    
-    .logo-footer img {
-        width: 100px; /* Reducir el tamaño del logo */
-        height: auto;
-        margin-top: -30px; /* Ajustar margen superior */
-        margin-right: 200px; /* Eliminar margen derecho */
-        margin-bottom: 10px; /* Ajustar margen inferior */
-        margin-left: 148px; /* Centrar el logo */
-        border-right: none;
-        border-bottom: 1px solid white;
-
-    }
-    
-    .footer-links {
-        width: 100%; /* Ocupar todo el ancho en dispositivos pequeños */
-        margin-bottom: 33px; /* Aumentar el espacio entre los elementos */
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footer-links h4 {
-        font-size: 13px; /* Reducir el tamaño del título */
-        margin-bottom: 7px; /* Reducir el espacio inferior */
-    }
-    
-    .footer-links p {
-        margin-bottom: 4px; /* Reducir el espacio entre párrafos */
-        font-size: 9px; /* Reducir el tamaño del texto */
-    }
-    
-    .footer-links nav {
-        margin-top: 5px;
-        text-align: center;
-        display: flex;
-    }
-
-    .footer-links nav img {
-        width: 20px; /* Reducir el tamaño de los iconos de redes sociales */
-        height: auto;
-        margin-right: -2px; /* Ajustar el espacio entre los iconos */
-    }
-
-    
-    .footer-rigths {
-        font-size: 10px; /* Reducir el tamaño del texto de derechos de autor */
-    }
-}
-/* -------------------------------------------------------------------------- */
-/*                        MEDIA QR DE PAGINA DE CONTACTOS (320px)             */
-/* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /*                          PAGINA DE AGRADECIMIENTO                          */
 /* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                              comienza el main                              */
-/* -------------------------------------------------------------------------- */
-.fondo-agr{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    )
-    ,url(../assets/Img/fondos/fondo-agenda.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+/* main */
+.fondo-agr {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Img/fondos/fondo-agenda.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .texto-10 {
-    font-size: 60px;
-    padding-top: 110px;
-    color: #fffffff0;
-    text-align: center;
+  font-size: 60px;
+  padding-top: 200px;
+  color: rgba(255, 255, 255, 0.9411764706);
+  text-align: center;
 }
 
 .texto-20 {
-    font-size: 25px;
-    color: #c00000;
-    text-align: center;
-    padding-top: 50px;
-    margin-bottom: 260px;
+  font-size: 25px;
+  color: #c00000;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 260px;
 }
-/* -------------------------------------------------------------------------- */
-/*                              finaliza el main                              */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                          PAGINA DE AGRADECIMIENTO                          */
-/* -------------------------------------------------------------------------- */
-
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                             PAGINA DE PRODUCTOS                            */
 /* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                               comienza el main                             */
-/* -------------------------------------------------------------------------- */
-
+/* main */
 .titulo-productos {
-    color:  #000000ec;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    font-size: 40px;
+  color: rgba(0, 0, 0, 0.9254901961);
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  margin-bottom: 15px;
+  font-size: 40px;
 }
 
 .container {
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .hijos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: #0000007a 1px solid;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: rgba(0, 0, 0, 0.4784313725) 1px solid;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 40px;
 }
 
 .hijos img {
-    height: 200px;
-    width: 120px;
-    padding-top: 30px;
+  height: 200px;
+  width: 120px;
+  padding-top: 30px;
 }
 
 .hijos p, h2 {
-    color: #000000ec;
-    font-size: 15px;
-    padding-top: 20px;
-    padding-left: 20px;
+  color: rgba(0, 0, 0, 0.9254901961);
+  font-size: 15px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .hijos h2 {
-    font-size: 20px;
-    padding-bottom: 30px;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 .mensaje-final {
-    color: #000000ec;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.9254901961);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding-bottom: 30px;
 }
-/* -------------------------------------------------------------------------- */
-/*                              finaliza el main                              */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                             PAGINA DE PRODUCTOS                            */
-/* -------------------------------------------------------------------------- */
-
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                             PAGINA DE SERVICIOS                            */
 /* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                               inicia el main                               */
-/* -------------------------------------------------------------------------- */
+/* main */
 .fondo-servicio1 {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(../assets/Img/servicios/Lavadero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Img/servicios/Lavadero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .titulo-servicio1 {
-    color: #fffffff0;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 26px;
+  color: rgba(255, 255, 255, 0.9411764706);
+  padding-top: 190px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  font-size: 26px;
 }
 
 .informacion-servicio {
-    display: flex;
-    flex-direction: column;
-    color: #fffffff0;
-    font-size: 24px;
-    font-weight: 300;
-    padding-left: 20px;
-    padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.9411764706);
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 40px;
+  padding-top: 15px;
 }
 
-.precio-servicio{
-    margin-left: 50px;
-    padding-bottom: 100px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    position: absolute;
-    margin-left: 770px;
-    margin-top: -260px;
+.precio-servicio {
+  margin-left: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: absolute;
+  margin-left: 790px;
+  margin-top: -260px;
 }
 
 .precio-servicio img {
-    height: 390px;
-    width: 380px;
+  height: 390px;
+  width: 380px;
 }
 
-.agenda-tu-visita-servicio{
-    padding-top: 80px;
-    padding-left: 22px;
-    
+.agenda-tu-visita-servicio {
+  padding-top: 80px;
+  padding-left: 22px;
 }
 
+.agenda-tu-visita-servicio {
+  text-align: left;
+  margin-top: -30px;
+  margin-right: 38px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
 
-/* -------------------------------------------------------------------------- */
-/*                              finaliza el main                              */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                             PAGINA DE SERVICIOS                            */
-/* -------------------------------------------------------------------------- */
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c00000;
+  color: rgba(255, 255, 255, 0.9411764706);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-
-
+.boton:hover {
+  background-color: #a00000;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
 
 /* -------------------------------------------------------------------------- */
 /*                            PAGINA DE PROMOCIONES                           */
 /* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                               inicia el main                               */
-/* -------------------------------------------------------------------------- */
+/* main */
 .fondo-promocion1 {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(../assets/Img/promociones/pagina-servicio-1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Img/promociones/pagina-servicio-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .titulo-promocion1 {
-    color: #fffffff0;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
+  color: rgba(255, 255, 255, 0.9411764706);
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
 }
 
 .informacion-promocion {
-    display: flex;
-    flex-direction: column;
-    color: #fffffff0;
-    font-size: 24px;
-    font-weight: 300;
-    padding-left: 20px;
-    padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.9411764706);
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-top: 15px;
 }
 
-.precio-promocion{
-    margin-left: 50px;
-    padding-bottom: 100px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    position: absolute;
-    margin-left: 770px;
-    margin-top: -260px;
+.precio-promocion {
+  margin-left: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: absolute;
+  margin-left: 770px;
+  margin-top: -260px;
 }
 
 .precio-promocion img {
-    height: 390px;
-    width: 380px;
+  height: 390px;
+  width: 380px;
 }
 
-.agenda-tu-visita-promocion{
-    padding-top: 80px;
-    padding-left: 22px;
-    
+.agenda-tu-visita-promocion {
+  padding-top: 80px;
+  padding-left: 22px;
 }
-/* -------------------------------------------------------------------------- */
-/*                              finaliza el main                              */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                            PAGINA DE PROMOCIONES                           */
-/* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+/* Pagina de Inicio */
+@media screen and (max-width: 768px) {
+  header {
+    height: 75px;
+    padding: 5px;
+  }
+  .logo-header img {
+    height: 145px;
+    width: 115px;
+    margin-left: 13px;
+  }
+  nav a {
+    font-weight: 450;
+    font-size: 15px;
+    margin-left: 8px;
+  }
+  .productos {
+    font-weight: 450;
+    padding: 29px 8px;
+  }
+  .fondo-inicio {
+    background-size: 800px 540px;
+  }
+  main {
+    padding-left: 35px;
+  }
+  .informacion-inicio {
+    padding-top: 60px;
+  }
+  .informacion-inicio h1 {
+    font-size: 34px;
+  }
+  .informacion-inicio h2 {
+    font-size: 34px;
+  }
+  .informacion-inicio h3 {
+    font-size: 25px;
+  }
+  .contenedor-boton {
+    margin-top: 55px;
+  }
+  .boton {
+    padding: 12px 36px;
+    font-size: 13px;
+  }
+  .redes {
+    height: 30px;
+  }
+  .redes a {
+    margin: 0 26px;
+  }
+  .redes img {
+    width: 41px;
+    height: 41px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+    height: auto;
+  }
+  .logo-header img {
+    height: auto;
+    width: 70px;
+    margin-top: -10px;
+    margin-left: 0;
+  }
+  nav {
+    margin-top: 5px;
+    text-align: center;
+  }
+  nav a {
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .productos {
+    padding: 8px;
+  }
+  .fondo-inicio {
+    background-size: 400px 520px;
+  }
+  main {
+    padding-left: 20px;
+  }
+  .informacion-inicio {
+    font-size: 25px;
+    padding-top: 165px;
+  }
+  .informacion-inicio h1 {
+    font-size: 17px;
+  }
+  .informacion-inicio h2 {
+    font-size: 19px;
+    padding-bottom: 15px;
+  }
+  .informacion-inicio h3 {
+    font-size: 14px;
+  }
+  .contenedor-boton {
+    padding-bottom: 40px;
+    margin-top: 60px;
+    margin-left: 15px;
+  }
+  .boton {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+  .redes {
+    height: 30px;
+  }
+  .redes a {
+    margin: 0 20px;
+  }
+  .redes img {
+    width: 35px;
+    height: 35px;
+  }
+}
+/* Pagina de Contactos */
+@media screen and (max-width: 768px) {
+  .fondo-agenda {
+    background-size: 800px 640px;
+  }
+  .controls {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .titulo-agenda {
+    font-size: 40px;
+  }
+  .imagen-linea-titulo {
+    padding: 8px;
+  }
+  .imagen-linea-titulo img {
+    width: 300px;
+  }
+  .registro {
+    padding: 35px 10px;
+  }
+  .controls, .area, .registro .bottons {
+    width: 36%;
+    margin-bottom: 20px;
+  }
+  .registro .bottons {
+    padding: 12px;
+  }
+  .registro h3.modificado {
+    font-size: 50px;
+    margin-bottom: 37px;
+  }
+  .registro p {
+    height: 10px;
+    font-size: 18px;
+  }
+  .contenedor-mensaje {
+    max-width: 250px;
+    margin-left: 440px;
+    margin-top: -270px;
+  }
+  .mensaje {
+    height: 185px;
+  }
+  .titulo-de-mensaje {
+    padding-bottom: 10px;
+  }
+  .contenedor-boton-agenda {
+    margin-right: 38px;
+    margin-left: 11px;
+  }
+  .boton-agenda {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .logo-footer img {
+    width: 120px;
+    height: 120px;
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .footer-links h4 {
+    font-size: 15px;
+    margin-bottom: 13px;
+  }
+  .footer-links p {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fondo-agenda {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Img/fondos/fondo-agenda.webp);
+    background-size: 520px 1024px;
+    background-repeat: no-repeat;
+    height: 110vh;
+  }
+  main {
+    margin-top: 40px;
+  }
+  .contenedor-agenda {
+    padding-bottom: 30px;
+    overflow: hidden;
+    margin-right: -87px;
+  }
+  .titulo-agenda {
+    margin-top: -21px;
+    font-size: 35px;
+  }
+  .imagen-linea-titulo {
+    padding: 8px;
+    margin-top: -20px;
+  }
+  .imagen-linea-titulo img {
+    width: 250px;
+  }
+  .controls {
+    width: 48%;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .registro {
+    padding: 38px 0px;
+    margin-top: -18px;
+    margin-right: -83px;
+  }
+  .controls, .area, .registro .bottons {
+    width: 900px;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    max-width: 50%;
+    margin-left: 75px;
+  }
+  .registro .bottons {
+    max-width: 200px;
+    padding: 12px;
+    margin: 16px 0px;
+    font-size: 16px;
+    overflow: hidden;
+  }
+  .registro h3.modificado {
+    font-size: 50px;
+    margin-bottom: 37px;
+  }
+  .registro h4 {
+    font-size: 13px;
+  }
+  .registro p {
+    height: 40px;
+    font-size: 18px;
+  }
+  .contenedor-mensaje {
+    margin-left: 82px;
+    margin-top: -46px;
+  }
+  .mensaje {
+    width: 220px;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .titulo-de-mensaje {
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+  .contenedor-boton-agenda {
+    margin-top: -20px;
+    margin-right: 38px;
+    margin-left: 147px;
+    margin-bottom: 11px;
+  }
+  .boton-agenda {
+    padding: 9px 21px;
+    font-size: 13px;
+  }
+  .footer {
+    height: 100%;
+    margin-right: -90px;
+    overflow: hidden;
+  }
+  .container-footer {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .logo-footer img {
+    width: 100px;
+    height: auto;
+    margin-top: -30px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    margin-left: 148px;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: 33px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-links h4 {
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+  .footer-links p {
+    margin-bottom: 4px;
+    font-size: 9px;
+  }
+  .footer-links nav {
+    margin-top: 5px;
+    text-align: center;
+    display: flex;
+  }
+  .footer-links nav img {
+    width: 20px;
+    height: auto;
+    margin-right: -2px;
+  }
+  .footer-rigths {
+    font-size: 10px;
+  }
+}
 
-
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,418 @@
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+/* Pagina de Inicio */
+@media screen and (max-width: 768px) {
+
+    header{
+        height: 75px;
+        padding: 5px;
+    }
+    
+    .logo-header img{
+        height: 145px;
+        width: 115px;
+        margin-left: 13px;
+    }
+    
+    nav a{
+        font-weight: 450;
+        font-size: 15px;
+        margin-left: 8px;
+    }
+
+    .productos {
+        font-weight: 450;
+        padding: 29px 8px;
+    }
+
+    .fondo-inicio{
+        background-size: 800px 540px;
+    }
+
+    main {
+        padding-left: 35px; 
+    }
+    
+    .informacion-inicio {
+        padding-top: 60px;
+    }
+    
+    .informacion-inicio h1{
+        font-size: 34px;
+    }
+    .informacion-inicio h2 {
+        font-size: 34px;
+    }
+    
+    .informacion-inicio h3 {
+        font-size: 25px;
+    }
+    
+    .contenedor-boton {
+        margin-top: 55px;
+    }
+    
+    .boton {
+        padding: 12px 36px;
+        font-size: 13px;
+    }
+
+    .redes {
+        height: 30px;
+    }
+    
+    .redes a {
+        margin: 0 26px;
+    }
+    
+    .redes img {
+        width: 41px; 
+        height: 41px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 25px;
+        height: auto;
+    }
+
+    .logo-header img {
+        height: auto;
+        width: 70px;
+        margin-top: -10px;
+        margin-left: 0;
+    }
+
+    nav {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .productos {
+        padding: 8px;
+    }
+
+    .fondo-inicio{
+        background-size: 400px 520px;
+    }
+    
+    main {
+        padding-left: 20px;
+    }
+    
+    .informacion-inicio {
+        font-size: 25px;
+        padding-top: 165px;
+    }
+    
+    .informacion-inicio h1{
+        font-size: 17px;
+    }
+    .informacion-inicio h2 {
+        font-size: 19px;
+        padding-bottom: 15px;
+    }
+    
+    .informacion-inicio h3 {
+        font-size: 14px;
+    }
+    
+    .contenedor-boton {
+        padding-bottom: 40px;
+        margin-top: 60px;
+        margin-left: 15px;
+    }
+    
+    .boton {
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+
+    .redes {
+        height: 30px;
+    }
+    
+    .redes a {
+        margin: 0 20px;
+    }
+    
+    .redes img {
+        width: 35px; 
+        height: 35px;
+    }
+
+}
+
+/* Pagina de Contactos */
+@media screen and (max-width: 768px){
+    
+    .fondo-agenda{
+        background-size: 800px 640px;
+    }
+    
+    .controls {
+        padding: 5px;
+        font-size: 15px; 
+    }
+    
+    .titulo-agenda {
+        font-size: 40px;
+    }
+    
+    .imagen-linea-titulo {
+        padding: 8px;
+    }
+    
+    .imagen-linea-titulo img {
+        width: 300px;
+    }
+    
+    .registro {
+        padding: 35px 10px;
+    }
+    
+    .controls, .area, .registro .bottons {
+        width: 36%;  
+        margin-bottom: 20px;
+    }
+    
+    .registro .bottons { 
+        padding: 12px;
+    }
+    
+    .registro h3.modificado {
+        font-size: 50px;
+        margin-bottom: 37px;
+    }
+    
+    .registro p{
+        height: 10px;
+        font-size: 18px;
+    }
+    
+    .contenedor-mensaje {
+        max-width: 250px;
+        margin-left: 440px;
+        margin-top: -270px;
+    }
+    
+    .mensaje {
+        height: 185px;
+    }
+    
+    .titulo-de-mensaje {
+        padding-bottom: 10px;
+    }
+    
+    .contenedor-boton-agenda{
+            margin-right: 38px;
+            margin-left: 11px;
+    }
+    
+    .boton-agenda {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .logo-footer img{
+        width: 120px;
+        height: 120px;
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+
+    .footer-links h4{
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+    
+    .footer-links p {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .fondo-agenda{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        )
+        ,url(../assets/Img/fondos/fondo-agenda.webp);
+        background-size: 520px 1024px;
+        background-repeat: no-repeat;
+        height: 110vh;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+    
+    .contenedor-agenda {
+        padding-bottom: 30px;
+        overflow: hidden;
+        margin-right: -87px;
+    }
+    
+    .titulo-agenda {
+        margin-top: -21px;
+        font-size: 35px;
+
+    }
+    
+    .imagen-linea-titulo {
+        padding: 8px;
+        margin-top: -20px;
+    }
+    
+    .imagen-linea-titulo img {
+        width: 250px;
+    }
+    
+    .controls {
+        width: 48%; 
+        padding: 5px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .registro {
+        padding: 38px 0px;
+        margin-top: -18px;
+        margin-right: -83px;
+    }
+    
+    .controls, .area, .registro .bottons {
+        width: 900px;
+        margin: 10px 0; 
+        margin-bottom: 20px;
+        max-width: 50%;
+        margin-left: 75px;
+    }
+    
+    .registro .bottons { 
+        max-width: 200px; 
+        padding: 12px;
+        margin: 16px 0px;
+        font-size: 16px;
+        overflow: hidden;
+    }
+    
+    .registro h3.modificado {
+        font-size: 50px;
+        margin-bottom: 37px;
+    }
+    
+    .registro h4{
+        font-size: 13px;
+    }
+    
+    .registro p{
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .contenedor-mensaje {
+        margin-left: 82px;
+        margin-top: -46px;
+    }
+    
+    .mensaje {
+        width: 220px;
+        height: 100px;
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    
+    .titulo-de-mensaje {
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+    
+    .contenedor-boton-agenda{
+            margin-top: -20px;
+            margin-right: 38px;
+            margin-left: 147px;
+            margin-bottom: 11px
+    }
+    
+    .boton-agenda {
+        padding: 9px 21px;
+        font-size: 13px;
+    }
+    
+    .footer {
+        height: 100%;
+        margin-right: -90px;
+        overflow: hidden;
+    }
+    
+    .container-footer {
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .logo-footer img {
+        width: 100px;
+        height: auto;
+        margin-top: -30px;
+        margin-right: 200px;
+        margin-bottom: 10px;
+        margin-left: 148px;
+        border-right: none;
+        border-bottom: 1px solid white;
+
+    }
+    
+    .footer-links {
+        width: 100%;
+        margin-bottom: 33px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-links h4 {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+    
+    .footer-links p {
+        margin-bottom: 4px;
+        font-size: 9px;
+    }
+    
+    .footer-links nav {
+        margin-top: 5px;
+        text-align: center;
+        display: flex;
+    }
+
+    .footer-links nav img {
+        width: 20px;
+        height: auto;
+        margin-right: -2px;
+    }
+
+    
+    .footer-rigths {
+        font-size: 10px;
+    }
+}
