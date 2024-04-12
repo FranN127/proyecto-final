@@ -24,6 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  z-index: 100;
 }
 header nav a {
   font-weight: 500;
@@ -107,6 +108,9 @@ header .productos:hover {
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fondo-inicio .boton a {
+  text-decoration: none;
 }
 .fondo-inicio .boton:hover {
   background-color: #a00000;
@@ -502,10 +506,18 @@ footer-1 .redes img:hover {
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.boton a {
+  text-decoration: none;
+}
+
 .boton:hover {
   background-color: #a00000;
   transform: scale(1.1);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.carrousell-container {
+  margin-top: 100px;
 }
 
 /* -------------------------------------------------------------------------- */
