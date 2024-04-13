@@ -53,3 +53,55 @@
     font-size: 30px;
     padding-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .titulo-productos {
+        padding-top: 105px;
+        margin-bottom: 0px;
+        font-size: 33px;
+    }
+    
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hijos {
+        width: 166px;
+        height: 328px;
+    }
+    
+    .hijos img {
+        height: 200px;
+        width: 120px;
+        padding-top: 30px;
+    }
+    
+    .hijos p, h2 {
+        color: #000000ec;
+        font-size: 15px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    
+    .hijos h2 {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .mensaje-final {
+        color: #000000ec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+}
