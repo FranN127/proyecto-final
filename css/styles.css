@@ -12,7 +12,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* header */
 header {
   position: fixed;
   top: 0;
@@ -57,6 +56,96 @@ header .productos {
 }
 header .productos:hover {
   color: rgba(0, 0, 0, 0.9254901961);
+}
+
+/* footer-principal */
+footer-1 {
+  text-align: center;
+  padding: 20px;
+}
+footer-1 .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+footer-1 .redes a {
+  margin: 0 30px;
+}
+footer-1 .redes img {
+  width: 50px;
+  height: 50px;
+}
+footer-1 .redes img:hover {
+  transform: scale(1.1);
+}
+
+/* footer-general */
+.container-footer {
+  margin: 0 auto;
+  height: 190px;
+}
+
+.footer {
+  background-color: #212121;
+  padding: 10px 0;
+}
+
+.logo-footer img {
+  width: 130px;
+  height: 130px;
+  padding-left: 15px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 60px;
+  border-right: 2px solid #ffffff;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #c00000;
+  display: inline-block;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-links p {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.footer-links nav img {
+  padding-bottom: 10px;
+}
+
+.footer-rigths {
+  background-color: rgba(174, 174, 174, 0.9215686275);
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6862745098);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-rigths img {
+  height: 10px;
+  width: 10px;
+  margin-right: 3px;
 }
 
 /* main */
@@ -118,31 +207,6 @@ header .productos:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* footer */
-footer-1 {
-  text-align: center;
-  padding: 20px;
-}
-footer-1 .redes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-}
-footer-1 .redes a {
-  margin: 0 30px;
-}
-footer-1 .redes img {
-  width: 50px;
-  height: 50px;
-}
-footer-1 .redes img:hover {
-  transform: scale(1.1);
-}
-
-/* -------------------------------------------------------------------------- */
-/*                             PAGINA DE CONTACTOS                            */
-/* -------------------------------------------------------------------------- */
 /* main */
 .fondo-agenda {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Img/fondos/fondo-agenda.webp);
@@ -281,77 +345,6 @@ footer-1 .redes img:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* footer */
-.container-footer {
-  margin: 0 auto;
-  height: 190px;
-}
-
-.footer {
-  background-color: #212121;
-  padding: 10px 0;
-}
-
-.logo-footer img {
-  width: 130px;
-  height: 130px;
-  padding-left: 15px;
-  padding-top: 20px;
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 60px;
-  border-right: 2px solid #ffffff;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-links {
-  width: 25%;
-  padding: 0 15px;
-}
-
-.footer-links h4 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 25px;
-  font-weight: 500;
-  border-bottom: 2px solid #c00000;
-  display: inline-block;
-  padding-bottom: 10px;
-  display: inline-block;
-}
-
-.footer-links p {
-  margin-bottom: 10px;
-  font-size: 13px;
-}
-
-.footer-links nav img {
-  padding-bottom: 10px;
-}
-
-.footer-rigths {
-  background-color: rgba(174, 174, 174, 0.9215686275);
-  font-size: 11px;
-  color: rgba(0, 0, 0, 0.6862745098);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-rigths img {
-  height: 10px;
-  width: 10px;
-  margin-right: 3px;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                          PAGINA DE AGRADECIMIENTO                          */
-/* -------------------------------------------------------------------------- */
 /* main */
 .fondo-agr {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Img/fondos/fondo-agenda.webp);
@@ -375,9 +368,6 @@ footer-1 .redes img:hover {
   margin-bottom: 260px;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                             PAGINA DE PRODUCTOS                            */
-/* -------------------------------------------------------------------------- */
 /* main */
 .titulo-productos {
   color: rgba(0, 0, 0, 0.9254901961);
@@ -434,9 +424,6 @@ footer-1 .redes img:hover {
   padding-bottom: 30px;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                             PAGINA DE SERVICIOS                            */
-/* -------------------------------------------------------------------------- */
 /* main */
 .fondo-servicio1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Img/servicios/Lavadero.jpg);
@@ -516,13 +503,98 @@ footer-1 .redes img:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.carrousell-container {
-  margin-top: 100px;
+.agenda-tu-visita-servicio {
+  padding-top: 80px;
+  padding-left: 22px;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                            PAGINA DE PROMOCIONES                           */
-/* -------------------------------------------------------------------------- */
+.agenda-tu-visita-servicio {
+  text-align: left;
+  margin-top: -30px;
+  margin-right: 38px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c00000;
+  color: rgba(255, 255, 255, 0.9411764706);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton a {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(253, 253, 253, 0.9921568627);
+}
+
+.boton:hover {
+  background-color: #a00000;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.carrousell-container {
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.fondo-servicio1 {
+  overflow: hidden;
+}
+
+.titulo-servicio1 {
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.titulo-servicio1 h1 {
+  font-size: 43px;
+}
+
+.texto-5 {
+  font-size: 19px;
+}
+
+.informacion-servicio {
+  position: absolute;
+  margin-left: 355px;
+  margin-top: -380px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.agenda-tu-visita-servicio {
+  position: absolute;
+  top: 61%;
+  left: 13.7%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.precio-servicio {
+  position: absolute;
+  top: 93%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.precio-servicio img {
+  padding: 25px;
+}
+
 /* main */
 .fondo-promocion1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Img/promociones/pagina-servicio-1.png);
@@ -571,9 +643,6 @@ footer-1 .redes img:hover {
   padding-left: 22px;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                MEDIA QUERIES                               */
-/* -------------------------------------------------------------------------- */
 /* Pagina de Inicio */
 @media screen and (max-width: 768px) {
   header {
