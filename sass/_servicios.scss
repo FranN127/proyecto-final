@@ -1,173 +1,373 @@
-/* main */
-.fondo-servicio1 {
-     background-image: linear-gradient(
-         0deg,
-         rgba(0,0,0,0.5),
-         rgba(0,0,0,0.5)
-     )
-     ,url(../assets/Img/servicios/Lavadero.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     height: 100vh;
+// /* main */
+// .fondo-servicio1 {
+//      background-image: linear-gradient(
+//          0deg,
+//          rgba(0,0,0,0.5),
+//          rgba(0,0,0,0.5)
+//      )
+//      ,url(../assets/Img/servicios/Lavadero.jpg);
+//      background-size: cover;
+//      background-repeat: no-repeat;
+//      height: 100vh;
+// }
+
+// .titulo-servicio1 {
+//      color: #fffffff0;
+//      padding-top: 190px;
+//      padding-left: 40px;
+//      padding-bottom: 20px;
+//      font-size: 26px;
+// }
+
+// .informacion-servicio {
+//      display: flex;
+//      flex-direction: column;
+//      color: #fffffff0;
+//      font-size: 24px;
+//      font-weight: 300;
+//      padding-left: 40px;
+//      padding-top: 15px;
+// }
+
+// .precio-servicio{
+//      margin-left: 50px;
+//      padding-bottom: 100px;
+//      display: flex;
+//      align-items: end;
+//      justify-content: end;
+//      position: absolute;
+//      margin-left: 790px;
+//      margin-top: -260px;
+// }
+
+// .precio-servicio img {
+//      height: 390px;
+//      width: 380px;
+// }
+
+// .agenda-tu-visita-servicio{
+//      padding-top: 80px;
+//      padding-left: 22px;
+// }
+
+// .agenda-tu-visita-servicio{
+//      text-align: left;
+//      margin-top: -30px;
+//      margin-right: 38px;
+//      margin-left: 20px;
+//      margin-bottom: 15px;
+// }
+
+// .boton {
+//      display: inline-block;
+//      padding: 10px 20px;
+//      background-color: #c00000;
+//      color: #fffffff0;
+//      text-decoration: none;
+//      font-size: 15px;
+//      font-weight: bold;
+//      border: none;
+//      border-radius: 5px;
+//      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+//      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+// }
+// .boton a { 
+//     text-decoration: none;
+// }
+
+// .boton:hover {
+//      background-color: #a00000;
+//      transform: scale(1.1);
+//      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+// }
+
+// .agenda-tu-visita-servicio{
+//     padding-top: 80px;
+//     padding-left: 22px;
+// }
+
+// .agenda-tu-visita-servicio{
+//     text-align: left;
+//     margin-top: -30px;
+//     margin-right: 38px;
+//     margin-left: 20px;
+//     margin-bottom: 15px;
+// }
+
+// .boton {
+//     display: inline-block;
+//     padding: 10px 20px;
+//     background-color: #c00000;
+//     color: #fffffff0;
+//     text-decoration: none;
+//     font-size: 15px;
+//     font-weight: bold;
+//     border: none;
+//     border-radius: 5px;
+//     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+//     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+// }
+// .boton a { 
+//    text-decoration: none;
+//    font-size: 15px;
+//    color: #fdfdfdfd;
+// }
+
+// .boton:hover {
+//     background-color: #a00000;
+//     transform: scale(1.1);
+//     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+// }
+
+// .carrousell-container {
+//     margin-top: 0px;
+//     height: 450px;
+// }
+
+// .fondo-servicio1{
+//     overflow: hidden;
+// }
+// .titulo-servicio1 {
+//     position: absolute;
+//     top: 20%;
+//     left: 16%;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+// }
+
+// .titulo-servicio1 h1{
+//     font-size: 43px;
+// }
+
+// .texto-5 {
+//     font-size: 19px;
+// }
+
+// .informacion-servicio {
+//     position: absolute;
+//     margin-left: 355px;
+//     margin-top: -380px;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+// }
+
+// .agenda-tu-visita-servicio{
+//     position: absolute;
+//     top: 61%;
+//     left: 13.7%;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+// }
+
+// .precio-servicio{
+//     position: absolute;
+//     top: 93%;
+//     left: 15%;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+// }
+
+// .precio-servicio img{
+//     padding: 25px;
+// }
+
+.fondo-servicio{
+    background-color: #fdfdfdfd;
 }
 
-.titulo-servicio1 {
-     color: #fffffff0;
-     padding-top: 190px;
-     padding-left: 40px;
-     padding-bottom: 20px;
-     font-size: 26px;
+.contenedor-servicios-titulo{
+    text-align: center;
+    justify-content: center;
+    margin-top: 115px;
+    font-size: 40px;
 }
 
-.informacion-servicio {
-     display: flex;
-     flex-direction: column;
-     color: #fffffff0;
-     font-size: 24px;
-     font-weight: 300;
-     padding-left: 40px;
-     padding-top: 15px;
-}
-
-.precio-servicio{
-     margin-left: 50px;
-     padding-bottom: 100px;
-     display: flex;
-     align-items: end;
-     justify-content: end;
-     position: absolute;
-     margin-left: 790px;
-     margin-top: -260px;
-}
-
-.precio-servicio img {
-     height: 390px;
-     width: 380px;
-}
-
-.agenda-tu-visita-servicio{
-     padding-top: 80px;
-     padding-left: 22px;
-}
-
-.agenda-tu-visita-servicio{
-     text-align: left;
-     margin-top: -30px;
-     margin-right: 38px;
-     margin-left: 20px;
-     margin-bottom: 15px;
-}
-
-.boton {
-     display: inline-block;
-     padding: 10px 20px;
-     background-color: #c00000;
-     color: #fffffff0;
-     text-decoration: none;
-     font-size: 15px;
-     font-weight: bold;
-     border: none;
-     border-radius: 5px;
-     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.boton a { 
-    text-decoration: none;
-}
-
-.boton:hover {
-     background-color: #a00000;
-     transform: scale(1.1);
-     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.agenda-tu-visita-servicio{
-    padding-top: 80px;
-    padding-left: 22px;
-}
-
-.agenda-tu-visita-servicio{
-    text-align: left;
-    margin-top: -30px;
-    margin-right: 38px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-
-.boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #c00000;
-    color: #fffffff0;
-    text-decoration: none;
-    font-size: 15px;
+.contenedor-servicios-titulo h1{
+    color: black;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.boton a { 
-   text-decoration: none;
-   font-size: 15px;
-   color: #fdfdfdfd;
 }
 
-.boton:hover {
-    background-color: #a00000;
-    transform: scale(1.1);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+.carrusel-contenedor{
+    width: 100%;
+    margin-top: 30px;
+    border: 5px;
 }
 
-.carrousell-container {
-    margin-top: 0px;
-    overflow: hidden;
+.titulo-servicio1{
+    margin-top: 75px;
+    margin-left: 40px;
+}
+.texto-4{
+    color: black;
 }
 
-.fondo-servicio1{
-    overflow: hidden;
-}
-.titulo-servicio1 {
-    position: absolute;
-    top: 20%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
+.informacion-servicio{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
 
-.titulo-servicio1 h1{
-    font-size: 43px;
 }
-
-.texto-5 {
-    font-size: 19px;
-}
-
-.informacion-servicio {
-    position: absolute;
-    margin-left: 355px;
-    margin-top: -380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.agenda-tu-visita-servicio{
-    position: absolute;
-    top: 61%;
-    left: 13.7%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+.texto-5{
+    color: black;
 }
 
 .precio-servicio{
     position: absolute;
-    top: 93%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    margin-left: 939px;
+    margin-top: -190px;
 }
-
 .precio-servicio img{
-    padding: 25px;
+    height: 250px;
+    width: 290px;
 }
 
+    
+     .agenda-tu-visita-servicio{
+         text-align: left;
+         margin-top: 27px;
+         margin-right: 38px;
+         margin-left: 40px;
+         margin-bottom: 15px;
+     }
+    
+     .boton {
+         display: inline-block;
+         padding: 10px 20px;
+         background-color: #c00000;
+         color: #fffffff0;
+         text-decoration: none;
+         font-size: 15px;
+         font-weight: bold;
+         border: none;
+         border-radius: 5px;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+         transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+     }
+     .boton a { 
+        text-decoration: none;
+        font-size: 15px;
+        color: #fdfdfdfd;
+    }
+    
+     .boton:hover {
+        background-color: #a00000;
+        transform: scale(1.1);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-servicio2{
+    margin-top: 102px;
+    margin-left: 685px;
+}
+.texto-94{
+    color: black;
+}
+
+.informacion-servicio2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 685px;
+
+}
+.texto-95{
+    color: black;
+}
+
+.precio-servicio2{
+    position: absolute;
+    margin-left: 48px;
+    margin-top: -124px;
+}
+.precio-servicio2 img{
+    height: 250px;
+    width: 290px;
+}
+
+    
+     .agenda-tu-visita-servicio2{
+         text-align: left;
+         margin-top: 27px;
+         margin-right: 38px;
+         margin-left: 685px;
+         margin-bottom: 15px;
+     }
+
+.precio-servicio21{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -183px;
+}
+.precio-servicio21 img{
+    height: 250px;
+    width: 290px;
+}
+
+.precio-servicio22{
+    position: absolute;
+    margin-left: 45px;
+    margin-top: -212px;
+}
+.precio-servicio22 img{
+    height: 250px;
+    width: 290px;
+}
+
+.precio-servicio23{
+    position: absolute;
+    margin-left: 939px;
+    margin-top: -200px;
+}
+.precio-servicio23 img{
+    height: 250px;
+    width: 290px;
+}
+
+.precio-servicio24{
+    position: absolute;
+    margin-left: 939px;
+    margin-top: -202px;
+}
+.precio-servicio24 img{
+    height: 250px;
+    width: 290px;
+}
+
+.precio-servicio25{
+    position: absolute;
+    margin-left: 39px;
+    margin-top: -148px;
+}
+.precio-servicio25 img{
+    height: 250px;
+    width: 290px;
+}
+
+
+.trapecio-derecho{
+    position: absolute;
+    margin-left: 664px;
+    margin-top: 43px;
+}
+.trapecio-derecho img{
+    height: 380px;
+}
+
+.trapecio-izquierdo{
+    position: absolute;
+    margin-top: -5px;
+}
+
+.trapecio-izquierdo img{
+    height: 380px;
+}
+
+
+
+.footer{
+    margin-top: 60px;
+}
+
+.container-footer {
+    margin: 0 auto;
+    height: 205px;
+}

@@ -465,95 +465,63 @@ footer-1 .redes img:hover {
     padding-bottom: 30px;
   }
 }
-/* main */
-.fondo-servicio1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Img/servicios/Lavadero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+.fondo-servicio {
+  background-color: rgba(253, 253, 253, 0.9921568627);
+}
+
+.contenedor-servicios-titulo {
+  text-align: center;
+  justify-content: center;
+  margin-top: 115px;
+  font-size: 40px;
+}
+
+.contenedor-servicios-titulo h1 {
+  color: black;
+  font-weight: bold;
+}
+
+.carrusel-contenedor {
+  width: 100%;
+  margin-top: 30px;
+  border: 5px;
 }
 
 .titulo-servicio1 {
-  color: rgba(255, 255, 255, 0.9411764706);
-  padding-top: 190px;
-  padding-left: 40px;
-  padding-bottom: 20px;
-  font-size: 26px;
+  margin-top: 75px;
+  margin-left: 40px;
+}
+
+.texto-4 {
+  color: black;
 }
 
 .informacion-servicio {
-  display: flex;
-  flex-direction: column;
-  color: rgba(255, 255, 255, 0.9411764706);
-  font-size: 24px;
-  font-weight: 300;
-  padding-left: 40px;
-  padding-top: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.texto-5 {
+  color: black;
 }
 
 .precio-servicio {
-  margin-left: 50px;
-  padding-bottom: 100px;
-  display: flex;
-  align-items: end;
-  justify-content: end;
   position: absolute;
-  margin-left: 790px;
-  margin-top: -260px;
+  margin-left: 939px;
+  margin-top: -190px;
 }
 
 .precio-servicio img {
-  height: 390px;
-  width: 380px;
-}
-
-.agenda-tu-visita-servicio {
-  padding-top: 80px;
-  padding-left: 22px;
+  height: 250px;
+  width: 290px;
 }
 
 .agenda-tu-visita-servicio {
   text-align: left;
-  margin-top: -30px;
+  margin-top: 27px;
   margin-right: 38px;
-  margin-left: 20px;
-  margin-bottom: 15px;
-}
-
-.boton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #c00000;
-  color: rgba(255, 255, 255, 0.9411764706);
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.boton a {
-  text-decoration: none;
-}
-
-.boton:hover {
-  background-color: #a00000;
-  transform: scale(1.1);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.agenda-tu-visita-servicio {
-  padding-top: 80px;
-  padding-left: 22px;
-}
-
-.agenda-tu-visita-servicio {
-  text-align: left;
-  margin-top: -30px;
-  margin-right: 38px;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-bottom: 15px;
 }
 
@@ -583,57 +551,125 @@ footer-1 .redes img:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.carrousell-container {
-  margin-top: 0px;
-  overflow: hidden;
+.titulo-servicio2 {
+  margin-top: 102px;
+  margin-left: 685px;
 }
 
-.fondo-servicio1 {
-  overflow: hidden;
+.texto-94 {
+  color: black;
 }
 
-.titulo-servicio1 {
+.informacion-servicio2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 685px;
+}
+
+.texto-95 {
+  color: black;
+}
+
+.precio-servicio2 {
   position: absolute;
-  top: 20%;
-  left: 16%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  margin-left: 48px;
+  margin-top: -124px;
 }
 
-.titulo-servicio1 h1 {
-  font-size: 43px;
+.precio-servicio2 img {
+  height: 250px;
+  width: 290px;
 }
 
-.texto-5 {
-  font-size: 19px;
+.agenda-tu-visita-servicio2 {
+  text-align: left;
+  margin-top: 27px;
+  margin-right: 38px;
+  margin-left: 685px;
+  margin-bottom: 15px;
 }
 
-.informacion-servicio {
+.precio-servicio21 {
   position: absolute;
-  margin-left: 355px;
-  margin-top: -380px;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  margin-left: 50px;
+  margin-top: -183px;
 }
 
-.agenda-tu-visita-servicio {
+.precio-servicio21 img {
+  height: 250px;
+  width: 290px;
+}
+
+.precio-servicio22 {
   position: absolute;
-  top: 61%;
-  left: 13.7%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  margin-left: 45px;
+  margin-top: -212px;
 }
 
-.precio-servicio {
+.precio-servicio22 img {
+  height: 250px;
+  width: 290px;
+}
+
+.precio-servicio23 {
   position: absolute;
-  top: 93%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  margin-left: 939px;
+  margin-top: -200px;
 }
 
-.precio-servicio img {
-  padding: 25px;
+.precio-servicio23 img {
+  height: 250px;
+  width: 290px;
+}
+
+.precio-servicio24 {
+  position: absolute;
+  margin-left: 939px;
+  margin-top: -202px;
+}
+
+.precio-servicio24 img {
+  height: 250px;
+  width: 290px;
+}
+
+.precio-servicio25 {
+  position: absolute;
+  margin-left: 39px;
+  margin-top: -148px;
+}
+
+.precio-servicio25 img {
+  height: 250px;
+  width: 290px;
+}
+
+.trapecio-derecho {
+  position: absolute;
+  margin-left: 664px;
+  margin-top: 43px;
+}
+
+.trapecio-derecho img {
+  height: 380px;
+}
+
+.trapecio-izquierdo {
+  position: absolute;
+  margin-top: -5px;
+}
+
+.trapecio-izquierdo img {
+  height: 380px;
+}
+
+.footer {
+  margin-top: 60px;
+}
+
+.container-footer {
+  margin: 0 auto;
+  height: 205px;
 }
 
 /* main */
@@ -682,6 +718,10 @@ footer-1 .redes img:hover {
 .agenda-tu-visita-promocion {
   padding-top: 80px;
   padding-left: 22px;
+}
+
+.banner-container img {
+  height: 20px;
 }
 
 /* Pagina de Inicio */
