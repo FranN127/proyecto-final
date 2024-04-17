@@ -1,57 +1,52 @@
-/* main */
-.fondo-promocion1 {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(../assets/Img/promociones/pagina-servicio-1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+$color-fuente:#fdfdfdfd;
+$color-fuente2:#000000ec;
+$background-color:#212121;
+$color-boton:#c00000;
+// promociones
+.contenedor-promo-titulo{
+    text-align: center;
+    justify-content: center;
+    margin-top: 115px;
+}
+.contenedor-promo-titulo h1{
+    color: $color-fuente2;
+    font-weight: bold;
+    font-size: 40px;
 }
 
-.titulo-promocion1 {
-    color: #fffffff0;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
+.carrusel-contenedor-promo{
+    width: 100%;
+    margin-top: 30px;
 }
 
-.informacion-promocion {
-    display: flex;
-    flex-direction: column;
-    color: #fffffff0;
-    font-size: 24px;
-    font-weight: 300;
-    padding-left: 20px;
-    padding-top: 15px;
+.titulo-promo-servicios{
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.titulo-promo-servicios h2{
+    color: $color-fuente2;
+    font-weight: bold;
+    font-size: 40px;
 }
 
-.precio-promocion{
-    margin-left: 50px;
-    padding-bottom: 100px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    position: absolute;
-    margin-left: 770px;
-    margin-top: -260px;
+.contenedor-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 70px;
 }
 
-.precio-promocion img {
-    height: 390px;
-    width: 380px;
+.item img{
+    width: 235px;
+    height: 300px;
+    margin-bottom: 70px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
-.agenda-tu-visita-promocion{
-    padding-top: 80px;
-    padding-left: 22px;
-    
-}
-
-.banner-container img{
-    height: 20px;
+.item:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
 }

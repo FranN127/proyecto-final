@@ -1,3 +1,7 @@
+$color-fuente:#fdfdfdfd;
+$color-fuente2:#000000ec;
+$background-color:#212121;
+$color-boton:#c00000;
 /* main */
 .fondo-inicio{
     background-image: linear-gradient(
@@ -30,7 +34,7 @@
     .informacion-inicio h2 {
     font-family: "Dancing Script", cursive;
     font-size: 50px;
-    color: #fdfdfdfd;
+    color: $color-fuente;
     padding: 0px;
     padding-bottom: 20px;
     }
@@ -50,8 +54,8 @@
     display: inline-block;
     text-decoration: none;
     padding: 15px 40px;
-    background-color: #c00000;
-    color: #fdfdfdfd;
+    background-color: $color-boton;
+    color: $color-fuente;
     font-size: 15px;
     font-weight: bold;
     border: none;
@@ -64,7 +68,7 @@
     }
 
     .boton:hover {
-    background-color: #a00000;
+    background-color: $color-boton;
     transform: scale(1.1);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }

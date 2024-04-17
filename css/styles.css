@@ -57,7 +57,65 @@ header .productos {
 header .productos:hover {
   color: rgba(0, 0, 0, 0.9254901961);
 }
+header .dropdown {
+  display: none;
+}
 
+@media screen and (max-width: 320px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    z-index: 100;
+  }
+  header nav a {
+    display: none;
+  }
+  header .logo-header img {
+    height: 140px;
+    width: 123px;
+    margin-top: -5px;
+    margin-left: -278px;
+    align-items: center;
+    border-radius: 5px;
+    height: 112px;
+    width: 104px;
+    margin-top: -5px;
+    margin-left: -185px;
+  }
+  header a {
+    text-decoration: none;
+    color: rgba(253, 253, 253, 0.9921568627);
+  }
+  header nav a:hover {
+    color: #c00000;
+  }
+  header .productos {
+    font-weight: 500;
+    color: rgba(253, 253, 253, 0.9921568627);
+    padding: 34px 15px;
+    background-color: #c00000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  header .productos:hover {
+    color: rgba(0, 0, 0, 0.9254901961);
+  }
+  header .dropdown {
+    display: inline-block;
+    position: absolute;
+    display: block;
+    margin-left: 265px;
+  }
+}
 /* footer-principal */
 footer-1 {
   text-align: center;
@@ -68,6 +126,7 @@ footer-1 .redes {
   justify-content: center;
   align-items: center;
   height: 60px;
+  padding-bottom: 40px;
 }
 footer-1 .redes a {
   margin: 0 30px;
@@ -99,7 +158,7 @@ footer-1 .redes img:hover {
   margin-top: 30px;
   margin-left: 10px;
   margin-right: 60px;
-  border-right: 2px solid #ffffff;
+  border-right: 2px solid rgba(253, 253, 253, 0.9921568627);
 }
 
 .footer-row {
@@ -202,7 +261,7 @@ footer-1 .redes img:hover {
   text-decoration: none;
 }
 .fondo-inicio .boton:hover {
-  background-color: #a00000;
+  background-color: #c00000;
   transform: scale(1.1);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -230,15 +289,15 @@ footer-1 .redes img:hover {
   background: rgba(0, 0, 0, 0);
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.9411764706);
+  border: 1px solid rgba(253, 253, 253, 0.9921568627);
   font-family: sans-serif;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
   text-align: left;
   margin-bottom: 20px;
 }
 .fondo-agenda .registro .controls:invalid {
-  background: #b44242;
+  background: #c00000;
   border: none;
 }
 .fondo-agenda .imagen-linea-titulo {
@@ -268,7 +327,7 @@ footer-1 .redes img:hover {
   width: auto;
   max-width: 200px;
   padding: 12px;
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
   background-color: #c00000;
   margin: 16px 0px;
   font-size: 16px;
@@ -279,10 +338,10 @@ footer-1 .redes img:hover {
   font-size: 50px;
   margin-bottom: 37px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
 }
 .fondo-agenda .registro h4 {
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
 }
 .fondo-agenda .registro p {
   height: 40px;
@@ -310,10 +369,10 @@ footer-1 .redes img:hover {
   background: rgba(0, 0, 0, 0);
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.9411764706);
+  border: 1px solid rgba(253, 253, 253, 0.9921568627);
   font-family: sans-serif;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
   margin-bottom: 16px;
   text-align: left;
   margin-bottom: 20px;
@@ -330,7 +389,7 @@ footer-1 .redes img:hover {
   display: inline-block;
   padding: 15px 40px;
   background-color: #c00000;
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
@@ -341,10 +400,10 @@ footer-1 .redes img:hover {
 }
 .fondo-agenda .boton-agenda a {
   text-decoration: none;
-  color: white;
+  color: rgba(253, 253, 253, 0.9921568627);
 }
 .fondo-agenda .boton-agenda:hover {
-  background-color: #a00000;
+  background-color: #c00000;
   transform: scale(1.1);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -360,7 +419,7 @@ footer-1 .redes img:hover {
 .texto-10 {
   font-size: 60px;
   padding-top: 200px;
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
   text-align: center;
 }
 
@@ -392,7 +451,7 @@ footer-1 .redes img:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: rgba(0, 0, 0, 0.4784313725) 1px solid;
+  border: rgba(0, 0, 0, 0.9254901961) 1px solid;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin-bottom: 20px;
@@ -436,6 +495,7 @@ footer-1 .redes img:hover {
   }
   .container {
     grid-template-columns: repeat(3, 1fr);
+    margin-left: -22px;
   }
   .hijos {
     width: 166px;
@@ -465,6 +525,44 @@ footer-1 .redes img:hover {
     padding-bottom: 30px;
   }
 }
+@media screen and (max-width: 320px) {
+  .titulo-productos {
+    padding-top: 168px;
+    margin-bottom: 3px;
+    font-size: 23px;
+    margin-left: 88px;
+  }
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -9px;
+  }
+  .hijos {
+    margin-left: 2px;
+    margin-right: 20px;
+  }
+  .mensaje-final {
+    font-size: 8px;
+    padding-bottom: 0px;
+    margin-left: 60px;
+  }
+  .footer {
+    margin-top: 60px;
+  }
+  .logo-footer img {
+    width: 120px;
+    height: 120px;
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .footer-links h4 {
+    font-size: 15px;
+    margin-bottom: 13px;
+  }
+  .footer-links p {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+}
 .fondo-servicio {
   background-color: rgba(253, 253, 253, 0.9921568627);
 }
@@ -477,14 +575,13 @@ footer-1 .redes img:hover {
 }
 
 .contenedor-servicios-titulo h1 {
-  color: black;
+  color: rgba(0, 0, 0, 0.9254901961);
   font-weight: bold;
 }
 
 .carrusel-contenedor {
   width: 100%;
   margin-top: 30px;
-  border: 5px;
 }
 
 .titulo-servicio1 {
@@ -493,7 +590,7 @@ footer-1 .redes img:hover {
 }
 
 .texto-4 {
-  color: black;
+  color: rgba(0, 0, 0, 0.9254901961);
 }
 
 .informacion-servicio {
@@ -503,7 +600,7 @@ footer-1 .redes img:hover {
 }
 
 .texto-5 {
-  color: black;
+  color: rgba(0, 0, 0, 0.9254901961);
 }
 
 .precio-servicio {
@@ -529,7 +626,7 @@ footer-1 .redes img:hover {
   display: inline-block;
   padding: 10px 20px;
   background-color: #c00000;
-  color: rgba(255, 255, 255, 0.9411764706);
+  color: rgba(253, 253, 253, 0.9921568627);
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
@@ -546,7 +643,7 @@ footer-1 .redes img:hover {
 }
 
 .boton:hover {
-  background-color: #a00000;
+  background-color: #c00000;
   transform: scale(1.1);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -557,7 +654,7 @@ footer-1 .redes img:hover {
 }
 
 .texto-94 {
-  color: black;
+  color: rgba(0, 0, 0, 0.9254901961);
 }
 
 .informacion-servicio2 {
@@ -567,7 +664,7 @@ footer-1 .redes img:hover {
 }
 
 .texto-95 {
-  color: black;
+  color: rgba(0, 0, 0, 0.9254901961);
 }
 
 .precio-servicio2 {
@@ -672,56 +769,54 @@ footer-1 .redes img:hover {
   height: 205px;
 }
 
-/* main */
-.fondo-promocion1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Img/promociones/pagina-servicio-1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
+.contenedor-promo-titulo {
+  text-align: center;
+  justify-content: center;
+  margin-top: 115px;
 }
 
-.titulo-promocion1 {
-  color: rgba(255, 255, 255, 0.9411764706);
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  font-size: 30px;
+.contenedor-promo-titulo h1 {
+  color: rgba(0, 0, 0, 0.9254901961);
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.informacion-promocion {
-  display: flex;
-  flex-direction: column;
-  color: rgba(255, 255, 255, 0.9411764706);
-  font-size: 24px;
-  font-weight: 300;
-  padding-left: 20px;
-  padding-top: 15px;
+.carrusel-contenedor-promo {
+  width: 100%;
+  margin-top: 30px;
 }
 
-.precio-promocion {
-  margin-left: 50px;
-  padding-bottom: 100px;
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  position: absolute;
-  margin-left: 770px;
-  margin-top: -260px;
+.titulo-promo-servicios {
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 
-.precio-promocion img {
-  height: 390px;
-  width: 380px;
+.titulo-promo-servicios h2 {
+  color: rgba(0, 0, 0, 0.9254901961);
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.agenda-tu-visita-promocion {
-  padding-top: 80px;
-  padding-left: 22px;
+.contenedor-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 70px;
 }
 
-.banner-container img {
-  height: 20px;
+.item img {
+  width: 235px;
+  height: 300px;
+  margin-bottom: 70px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease;
 }
 
 /* Pagina de Inicio */
@@ -791,7 +886,7 @@ footer-1 .redes img:hover {
     height: auto;
     width: 70px;
     margin-top: -10px;
-    margin-left: 0;
+    margin-left: -140;
   }
   nav {
     margin-top: 5px;
@@ -802,6 +897,11 @@ footer-1 .redes img:hover {
     padding: 5px;
     font-size: 12px;
     line-height: 30px;
+  }
+  .dropdown {
+    position: absolute;
+    display: block;
+    margin-left: 188px;
   }
   .productos {
     padding: 8px;
