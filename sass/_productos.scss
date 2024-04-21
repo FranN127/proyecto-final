@@ -8,6 +8,7 @@ $color-boton:#c00000;
     color:  $color-fuente2;
     display: flex;
     justify-content: center;
+    font-weight: bold;
     padding-top: 120px;
     margin-bottom: 15px;
     font-size: 40px;
@@ -30,12 +31,19 @@ $color-boton:#c00000;
     margin-left: 20px;
     margin-right: 20px;
     margin: 40px;
+    height: 352px;
 }
 
 .hijos img {
     height: 200px;
     width: 120px;
     padding-top: 30px;
+    cursor: pointer;
+}
+
+.hijos:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
 }
 
 .hijos p, h2 {
