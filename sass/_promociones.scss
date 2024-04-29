@@ -3,20 +3,9 @@ $color-fuente2:#000000ec;
 $background-color:#212121;
 $color-boton:#c00000;
 // promociones
-.contenedor-promo-titulo{
-    text-align: center;
-    justify-content: center;
-    margin-top: 115px;
-}
-.contenedor-promo-titulo h1{
-    color: $color-fuente2;
-    font-weight: bold;
-    font-size: 40px;
-}
-
 .carrusel-contenedor-promo{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 215px;
 }
 
 .titulo-promo-servicios{
@@ -51,3 +40,12 @@ $color-boton:#c00000;
     transform: scale(1.1);
     transition: transform 1s ease;
 }
+
+
+
+
+
+
+
+
+

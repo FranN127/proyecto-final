@@ -15,25 +15,31 @@
     <meta property="og:image" content="https://searchenginereports.net/es/open-graph-generator">
     <title>Agenda Web</title>
     <link rel="shortcut icon" href="../assets/Img/iconos/pagina-inicio/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body class="fondo-agenda">
-
+<body class="fondo-agr">
     <header>
-            <a href="../index.html" class="logo-header">
-                <img src="../assets/Img/fondos/Logo.png" alt="Logo">
-            </a>
-
-            <nav class="navegacion"> 
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/servicios.html">Servicios</a>
-                <a href="../pages/promociones.html">Promociones</a>
-                <a href="../pages/productos.html" class="productos">Productos</a>
-                <a href="#" class="contacto">Contacto</a>
+        <div class="nav-wraper">
+            <nav>
+                <a href="../index.html" class="logo">
+                    <img src="../assets/Img/fondos/Logo.png" alt="Logo">
+                </a>
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><i class="material-icons">menu</i></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/servicios.html">Servicios</a></li>
+                        <li><a href="../pages/promociones.html">Promociones</a></li>
+                        <li><a href="../pages/productos.html" class="productos">Productos</a></li>
+                        <li><a href="../pages/agenda.html">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
+        </div>
     </header>
-
     <main>
         <div class="contenedor-agenda">
             <div>
@@ -62,7 +68,6 @@
             </div>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container-footer">
             <div class="footer-row">
@@ -84,17 +89,6 @@
                     <p><img src="../assets/Img/iconos/footer/email-footer.png" alt="email-footer">Auto Detailing@gmail.com</p>
                     <p><img src="../assets/Img/iconos/footer/telefono-footer.png" alt="telefono-footer">4334 93 85</p>
                 </div>
-                
-                <div class="footer-links">
-                        <h4>Redes</h4>
-                    <nav>
-                        <a href="https://www.whatsapp.com/" target="_blank"><img src="../assets/Img/iconos/footer/whatsapp-footer.png" alt="logo-whatsapp"></a>
-                        <br>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/Img/iconos/footer/instagram-footer.png" alt="logo/instagram"></a>
-                        <br>
-                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../assets/Img/iconos/footer/facebook-footer.png" alt="logo Facebook"></a>
-                    </nav>
-                </div>
             
             </div>
                 <div class="footer-rigths">
@@ -102,6 +96,5 @@
                 </div>
         </div>
     </footer>
-
 </body>
 </html>
